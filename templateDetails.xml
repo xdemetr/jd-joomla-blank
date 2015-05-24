@@ -2,57 +2,53 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 
 <extension version="3.1" type="template" client="site">
-	<name>JoomlaBlank3</name>
-	<version>1.0</version>
-	<creationDate>2014</creationDate>
-	<author>JoomDesign</author>
-	<authorEmail>dmitriev@joomdesign.ru</authorEmail>
-	<copyright>Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.</copyright>
-	<description>Joomla template</description>
-	<files>
-		<filename>favicon.ico</filename>
-		<filename>index.php</filename>
-		<filename>templateDetails.xml</filename>
-		<folder>css</folder>
-		<folder>html</folder>
-		<folder>images</folder>
-		<folder>js</folder>
-		
-	</files>
-	<positions>
-		<position>banner</position>
-		<position>debug</position>
-		<position>left</position>
-		<position>right</position>
-		<position>search</position>
-		<position>user</position>
-		<position>breadcrumbs</position>
-		<position>footer1</position>
-		<position>footer2</position>
-		<position>footer3</position>
-		<position>footer4</position>
-		<position>footer5</position>
-		<position>footer6</position>
-		<position>footer7</position>
-		<position>footer8</position>
-		<position>top-menu</position>
-		<position>position-1</position>
-		<position>content-top</position>
-		<position>position-13</position>
-		<position>position-14</position>
-		<position>footer</position>
-	</positions>
-	<config>
-		<fields name="params">
-			<fieldset name="advanced">			
-
-				
-				<field name="phoneHeader" class="" type="text" default=""
-					label="Номер телефона"
-					description="Отображается в шапке" />				
-
-				
-			</fieldset>
-		</fields>
-	</config>
+    <name>Joomla-Blank</name>
+    <version>1.0</version>
+    <creationDate>2015</creationDate>
+    <author>JoomDesign</author>
+    <authorEmail>dmitriev@joomdesign.ru</authorEmail>
+    <copyright>Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.</copyright>
+    <description>Joomla template</description>
+    <files>
+        <filename>favicon.ico</filename>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+    </files>
+    <positions>
+        <position>banner</position>
+        <position>debug</position>
+        <position>left</position>
+        <position>right</position>
+        <position>search</position>
+        <position>user</position>
+        <position>breadcrumbs</position>
+        <position>footer1</position>
+        <position>footer2</position>
+        <position>footer3</position>
+        <position>footer4</position>
+        <position>footer5</position>
+        <position>footer6</position>
+        <position>footer7</position>
+        <position>footer8</position>
+        <position>top-menu</position>
+        <position>position-1</position>
+        <position>content-top</position>
+        <position>content-bottom</position>
+        <position>position-13</position>
+        <position>position-14</position>
+        <position>footer</position>
+    </positions>
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field name="phoneHeader" class="" type="text" default=""
+                    label="Номер телефона"
+                    description="Отображается в шапке" />
+            </fieldset>
+        </fields>
+    </config>
 </extension>

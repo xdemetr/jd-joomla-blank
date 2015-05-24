@@ -17,7 +17,7 @@ gulp.task('build-app-js', function(){
     .on('error', function(err){
       console.log(err.message);
     })
-    .pipe(source('script.js'))
+    .pipe(source('script2.js'))
     .pipe(gulp.dest(config.publicJsDir))
     //.pipe(uglify('script.min.js'))
     //.pipe(gulp.dest(config.publicJsDir));

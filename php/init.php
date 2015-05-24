@@ -27,10 +27,10 @@ else
 // Add JavaScript Frameworks
 JHtml::_('bootstrap.framework');
 
-JHtml::script(Juri::base() . 'templates/joomlablank3/js/idangerous.swiper-2.1.min.js');
-JHtml::script(Juri::base() . 'templates/joomlablank3/js/idangerous.swiper.scrollbar-2.1.js');
+//JHtml::script(Juri::base() . 'templates/joomlablank3/js/idangerous.swiper-2.1.min.js');
+//JHtml::script(Juri::base() . 'templates/joomlablank3/js/idangerous.swiper.scrollbar-2.1.js');
 
-$doc->addScript('templates/' .$this->template. '/js/script.js');
+$doc->addScript('templates/' .$this->template. '/js/script2.js');
 
 // Add Stylesheets
 

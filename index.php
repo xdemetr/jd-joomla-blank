@@ -11,85 +11,84 @@ require dirname(__FILE__) . '/php/init.php';
 ?>
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
+<html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">  
   <jdoc:include type="head" />
   <!--[if lt IE 9]>
-		<script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
-	<![endif]-->
+    <script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
+  <![endif]-->
 </head>
 
-<body class="site spring <?php echo $option
-	. ' view-' . $view
-	. ($layout ? ' layout-' . $layout : ' no-layout')
-	. ($task ? ' task-' . $task : ' no-task')
-	. ($itemid ? ' itemid-' . $itemid : '')
-	. ($params->get('fluidContainer') ? ' fluid' : ' '); echo $centercol;
+<body class="site <?php echo $option
+  . ' view-' . $view
+  . ($layout ? ' layout-' . $layout : ' no-layout')
+  . ($task ? ' task-' . $task : ' no-task')
+  . ($itemid ? ' itemid-' . $itemid : '')
+  . ($params->get('fluidContainer') ? ' fluid' : ' '); echo $centercol;
 ?>">
-	<div class="wrap">
-		<div class="content-div">
-			
+  <div class="wrap">
+    <div class="content-div">
       <header class="main-header">
-				<div class="main-header-inner">
+        <div class="main-header-inner">
           <a href="/" class="logo">logo</a>
 
           <?php if($this->countModules('search')) : ?>
             <div class="header-block last">
-            	<jdoc:include type="modules" name="search" />
+              <jdoc:include type="modules" name="search" />
             </div>
           <?php endif; ?>
 
           <?php if($this->countModules('position-1')) : ?>
             <div class="header-block">
-            	<jdoc:include type="modules" name="position-1" />	                    	
+              <jdoc:include type="modules" name="position-1" />
             </div>
-          <?php endif; ?>					
-				</div>
-			</header>
+          <?php endif; ?>
+        </div>
+      </header>
 
-			<?php if($this->countModules('top-menu')) : ?>
+      <?php if($this->countModules('top-menu')) : ?>
         <nav class="main-navigation" role="navigation">
             <jdoc:include type="modules" name="top-menu" />
         </nav>
       <?php endif; ?>
 
-			<div class="cont-inner <?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
-				<div class="center-div">
-					
+      <div class="cont-inner <?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
+        <div class="center-div">
+
           <div class="content-three-col">
-						<jdoc:include type="modules" name="breadcrumbs" />
-						<jdoc:include type="message" />
+            <jdoc:include type="modules" name="breadcrumbs" />
+            <jdoc:include type="message" />
 
-						<?php if($this->countModules('content-top')) : ?>
+            <?php if($this->countModules('content-top')) : ?>
               <div class="content-top-block">
-              	<jdoc:include type="modules" name="content-top" style="joomdesignblock" headerLevel="1" />	                    	
+                <jdoc:include type="modules" name="content-top" style="joomdesignblock" headerLevel="1" />
               </div>
-          	<?php endif; ?>
+            <?php endif; ?>
 
 
-						<jdoc:include type="component" />
-					</div>
-				</div>
+            <jdoc:include type="component" />
+          </div>
+        </div>
 
-				<?php if ($this->countModules('left')) : ?>
-  				<aside class="sidebar-first">
-  					<jdoc:include type="modules" name="left" style="joomdesignblock" headerLevel="1" />
-  				</aside>
-				<?php endif; ?>
+        <?php if ($this->countModules('left')) : ?>
+          <aside class="sidebar-first">
+            <jdoc:include type="modules" name="left" style="joomdesignblock" headerLevel="1" />
+          </aside>
+        <?php endif; ?>
 
-				<?php if ($this->countModules('right')) : ?>
-  				<aside class="sidebar-second">
-  					<jdoc:include type="modules" name="right" style="joomdesignblock" headerLevel="1" />
-  				</aside>
-				<?php endif; ?>
+        <?php if ($this->countModules('right')) : ?>
+          <aside class="sidebar-second">
+            <jdoc:include type="modules" name="right" style="joomdesignblock" headerLevel="1" />
+          </aside>
+        <?php endif; ?>
 
 
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 
-	<footer class="main-footer" role="contentinfo">
+  <footer class="main-footer" role="contentinfo">
     
     <?php if($footerTop) { ?>
     <div class="main-footer-inner footer-top <?php echo $footerTopCol;?>">
@@ -150,12 +149,6 @@ require dirname(__FILE__) . '/php/init.php';
         </div>
     </div>
     <?php } ?>
-
-    
-       
-
-       
-    
 </footer>
 
 <? //echo $footerTopColCount.":".$footerBottomColCount;?>

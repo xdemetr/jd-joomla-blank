@@ -1,7 +1,7 @@
-menu = do ->
-  $('.faq-list dt').click ->
-    $self    = $(this)
-    $sibling = $self.next('dd')
-    $self.toggleClass('opened')
+->
+  $('ul.menu li').click ->
+    alert('123')
 
-    $sibling.slideToggle(100, -> $self.trigger 'mainContentHeightChange')
+  $('ul.menu li').hover ->
+    $( this ).addClass('hover')
+    $( this ).removeClass('hover')
