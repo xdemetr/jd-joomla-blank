@@ -1,0 +1,54 @@
+.main-footer
+  background: $footerBackground
+  color: $contrastColor
+
+  a
+    text-decoration: none
+    border-bottom: 1px solid
+    color: $contrastColor
+
+    &:hover
+      border-bottom: 1px solid $borderColor
+      color: $borderColor
+
+.main-footer-inner
+  @extend %inner
+  @extend %clear
+  padding: $gutterHorizontal 0
+
+  .footer-list
+    position: relative
+    overflow: hidden
+    @extend %clear
+
+  .footer-module
+    float: left
+
+  &.one-col
+    .footer-module
+      float: none
+
+  &.two-cols
+    .footer-list
+      margin-right: -2%
+
+    .footer-module
+      width: 48%
+      margin-right: 2%
+
+  &.three-cols
+    .footer-list
+      margin-right: -3.3%
+
+    .footer-module
+      width: 30%
+      margin-right: 3.3%
+
+  &.four-cols
+
+    .footer-list
+      margin-right: -2%
+
+    .footer-module
+      width: 23%
+      margin-right: 2%

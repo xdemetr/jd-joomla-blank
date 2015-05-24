@@ -1,0 +1,35 @@
+@import category/category-list
+@import category/cat-children
+@import category/table-category
+
+.category-desc
+  padding: $basicPadding/2 $basicPadding
+  background-color: $highLightBg + 20
+  border: 1px solid $highLightBg - 20
+  border-radius: $borderRadiusSmall
+  margin: 0 0 $basicPadding
+
+  @extend %clear
+
+
+
+.cat-children ul,
+.categories-list ul
+
+  li
+    margin: 0 0 $basicPadding/2
+
+  .item-title
+    display: block
+    padding: 0 $basicPadding
+    font-size: 16px
+    font-weight: 700
+
+  .category-desc
+    background: none
+
+
+
+
+
+

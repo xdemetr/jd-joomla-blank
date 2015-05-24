@@ -1,0 +1,20 @@
+ul.footer-menu
+  @extend %no-padding
+  @extend %no-margin
+
+ul.footer-menu li
+  list-style: none
+  background: none
+  margin: 0 1.5em 0 0
+  text-transform: uppercase
+  font-weight : 700
+  font-size: 1.2em
+  float: left
+  //@extend %float-left
+
+ul.footer-menu li a,
+ul.footer-menu li a:visited
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline

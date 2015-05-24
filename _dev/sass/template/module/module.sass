@@ -1,0 +1,62 @@
+@import calendar
+@import menu
+
+.module-block
+  background: none
+  border: none
+
+  ul.menu
+    border: none
+
+    li
+      border: none
+
+
+
+  &.cal
+    position: relative
+    border: none
+    border-radius: 24px
+    background: #fff
+
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      left: -4px
+      box-sizing: border-box
+      width: 100%
+      height: 100%
+      border: 1px solid #f3d1e2
+      border-radius: 24px
+      -moz-transform: rotate(1deg)
+      -webkit-transform: rotate(1deg)
+      transform: rotate(1deg)
+
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      left: -4px
+      box-sizing: border-box
+      width: 100%
+      height: 100%
+      border: 1px solid #e5f3cc
+      border-radius: 24px
+      -moz-transform: rotate(-2deg)
+      -webkit-transform: rotate(-2deg)
+      transform: rotate(-2deg)
+
+    .mod-title
+      position: relative
+      z-index: 30
+      border: none
+      background: none
+      color: $linkColor
+      padding: $basicPadding*2 $basicPadding 0 $basicPadding*2
+
+    .mod-content
+      position: relative
+      z-index: 30

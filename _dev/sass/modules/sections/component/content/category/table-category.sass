@@ -1,0 +1,31 @@
+table.category
+  width : 100%
+  margin: .8em 0
+  border: 1px solid $borderColor
+
+  th,
+  td
+    padding: $basicPadding
+    vertical-align: middle
+    border-bottom: 1px solid $borderColor
+
+  th
+    text-align: left
+    font-weight: bold
+    border-width: 4px
+    background-color: #f8f8f8
+
+  .list-title
+    > a
+      position: relative
+      padding-left: 1.4em
+
+      &::before
+        +font-icon
+        content: '\e6e5'
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        font-size: inherit
+        color: $colorGray

@@ -1,0 +1,56 @@
+dl.search-results
+  dt
+    padding: $basicPadding
+    padding-top: 1.5em!important
+    color: $colorGray
+
+    a
+      font-weight: 700
+
+    &.result-title
+      border-top: 1px solid $borderColor
+
+  dd.result-category,
+  dd.result-created
+    padding: 0 $basicPadding 0 $basicPadding*2
+    font-size: .9em
+    color: $colorGray
+
+  dd.result-text
+    padding: 0 $basicPadding 0 $basicPadding*2
+
+  dd.result-created
+    padding-bottom: $basicPadding
+
+
+span.icon-search
+  display: inline-block
+  position: relative
+  width: $basicPadding*4
+  height: $basicPadding*4
+
+  &::after
+    +font-icon
+    content: '\e73d'
+    display: block
+    width: $basicPadding*4
+    height: $basicPadding*4
+    text-align: center
+    line-height: $basicPadding*4
+
+
+.com_search
+  .btn-group
+    .btn
+      width: $basicPadding*4
+      height: $basicPadding*4
+      padding: 0
+      border: none
+      box-shadow: none
+
+
+    .inputbox
+      box-sizing: border-box
+      height: $basicPadding*4
+      margin: 0 4px 0 0
+      padding: 0 $basicPadding

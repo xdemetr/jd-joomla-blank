@@ -1,0 +1,26 @@
+.tags
+  margin-bottom: $basicPadding
+
+  span
+    display: inline-block
+    font-size: .8em
+    margin-right: $basicPadding
+
+    a
+      text-decoration: none
+      //background: $borderColor
+      border-radius: $borderRadiusSmall
+      display: block
+      //padding: 2px $basicPadding
+      position: relative
+      color: $colorGray
+
+      &::before
+        +font-icon
+        content: '\e740'
+        font-size: inherit
+        float: left
+        margin: 4px 4px 0 0
+
+      &:hover
+        color: $linkColor

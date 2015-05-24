@@ -1,0 +1,36 @@
+.category-list
+
+
+.content-category
+  .cat-children
+    > h3
+      font-size: 24px
+
+    > div
+
+
+    .item-title
+      //font: 20px/24px $font-family
+
+      &::before
+        +font-icon
+        margin-right: 4px
+        content: '\e793'
+
+.categories-list
+  li
+    padding: $basicPadding/2 0
+    dl
+      display: block
+      padding: $basicPadding/2 0 $basicPadding*2 $basicPadding
+
+      dt, dd
+        display: inline
+        color: $colorGray
+
+    .category-desc
+      @extend %no-margin
+
+    ul
+      margin-top: $basicPadding/2
+      margin-left: $basicPadding*2

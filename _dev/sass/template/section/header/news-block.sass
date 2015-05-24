@@ -1,0 +1,79 @@
+.news-block
+  float: right
+  width: 570px
+  height: 330px
+  margin: 28px 0 0
+  background: rgba(255,255,255,0.9)
+  box-sizing: border-box
+  padding: $basic-padding*2
+  border: 2px solid #fa8000
+  border-radius: 4px
+
+  & .btn
+    display: inline-block
+    @include gradient-top-to-bottom(#fc9d00,#fa8000)
+    box-shadow: 0 -2px #ffc133, 0 1px 2px rgba(211,64,2,0.73)
+    color: #fff
+    text-decoration: none
+    font-size: 20px
+    padding: $basic-padding*1.4 $basic-padding*2.4
+    border-radius: 2px
+    text-shadow: 0 1px rgba(0,0,0,0.35)
+    margin: 0 $basic-padding 0 0
+    position: relative
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      left: $basic-padding*2.4
+      top: 50%
+    &:hover
+      @include gradient-top-to-bottom(#fc9d00 + 20,#fa8000)
+
+    &.school
+      padding-left: 58px
+      &:before
+        width: 33px
+        height: 28px
+        background: url("../images/icon-school.png") no-repeat
+        margin: -14px 0 0
+
+    &.message
+      padding-left: 58px
+      &:before
+        width: 26px
+        height: 24px
+        margin: -12px 0 0
+        background: url("../images/icon-message.png") no-repeat
+
+  & .moduleblock
+    margin: 0 0 $basic-padding
+    padding: 0 0 $basic-padding
+    border-bottom: 3px solid #e9e8e7
+
+    & header.mod-title
+      & h1
+        color: #67352d
+        text-transform: uppercase
+        padding: 0 0 $basic-padding
+        margin: 0 0 $basic-padding
+        border-bottom: 3px solid #e9e8e7
+        font-size: 24px
+
+    & .modcontent
+      padding: 0
+      font-family: tahoma
+
+      & .item
+        margin: 0 0 $basic-padding*2
+        & header h1
+          line-height: 1.1em
+          max-height: 2.2em
+          overflow: hidden
+          margin: 0 0 $basic-padding/2
+
+      & .created
+        color: #313131
+        font-size: 12px
+
+

@@ -1,0 +1,44 @@
+div.search
+  fieldset.word,
+  .searchintro,
+  .phrases,
+  fieldset.only,
+  .form-limit,
+  p.counter
+    padding: $basicPadding
+    background: $borderColor
+
+  p
+    @extend %no-margin
+
+  p.counter
+    background: $borderColor - 10
+
+  .phrases-box
+    margin: 0 0 $basicPadding
+
+    .controls
+      > label
+        input
+          margin-right: 4px
+
+        &:not(:last-child)
+          margin-right: $gutterHorizontal
+
+  .only
+    > label
+
+      &:not(:last-child)
+        margin-right: $gutterHorizontal
+
+  fieldset
+    position: relative
+    padding-top: $basicPadding*4!important
+
+    legend
+      display: inline
+      position: absolute
+      top: 3px
+      font-weight: 700
+
+

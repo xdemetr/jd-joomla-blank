@@ -1,0 +1,131 @@
+#jc
+  padding: $basicPadding*3 0 0
+
+  h4
+    text-transform: uppercase
+    font-size: $basicPadding*3
+    font-weight: 700
+    border: none
+    color: $colorGray
+
+    &.add-comment-title
+      text-transform: none
+      font-weight: 400
+      color: $linkColor
+
+
+/** form **/
+#comments-form
+  padding: $basicPadding*2
+  border: none
+  border-radius: 4px
+  background: #e4f0f5
+
+  p
+    margin: 0!important
+    +clear-block
+    padding: 0 0 $basicPadding/2
+
+    textarea,
+    .grippie
+      box-sizing: border-box
+      width: 100%
+      max-width: inherit!important
+
+  #comments-form-buttons
+    overflow: inherit
+    margin: 4px 0 0!important
+
+  .comment-form-table
+    width: 100%
+
+    td
+      padding: 0
+      vertical-align: top
+
+      &.left
+        width: 35%
+        padding-right: $basicPadding*2
+
+    .line
+      margin: 0 0 $basicPadding
+
+#comments-form .comment-input, .rsform-input-box
+  box-sizing: border-box
+  width: 100%
+  height: auto!important
+  margin: 0
+  padding: 8px!important
+  font-style: italic
+  border: none!important
+  border-radius: 2px
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.28)
+  background: #cddae0
+  color: $colorGray
+
+  &.selected
+    background: #f8f8f8!important
+    color: #333
+
+  &:focus
+    //box-shadow: none!important
+
+#comments-form .btn, #comments-report-form .btn
+  padding: inherit!important
+#comments-form .btn, #comments-report-form .btn
+  padding: 5px 10px!important
+
+#comments-footer
+  display: none
+
+#comments
+
+  .comments-list
+    margin: 0
+
+    .comment-body
+      padding: $basicPadding*2
+      border: 1px solid $borderColor
+      border-radius: 8px
+      background: #fff
+
+    .comment-box
+      padding: $basicPadding/2 0 $basicPadding*2
+
+    .comments-vote
+      width: auto
+      padding-left: $basicPadding*2
+
+  #comments-list-footer
+    margin: $basicPadding*2 0 $basicPadding*2 (-$basicPadding*3)!important
+    padding: 0 0 $basicPadding*2 $basicPadding*3
+    border-bottom: 1px solid $borderColor
+
+/** comments module-block **/
+
+.jcomments-latest
+  margin: 0
+  padding: 0
+
+  li
+    list-style: none
+    margin: 0
+    padding: 0 0 $basicPadding
+
+  .comment-text
+    margin: 0 0 4px
+    padding: $basicPadding
+    border: 1px solid $borderColor
+    box-sizing: border-box
+    border-radius: 8px
+    background: #fff
+
+  .comment-info
+    overflow: hidden
+    max-height: 3.6em
+    padding: 0 4px
+    line-height: 1.2em
+    color: $colorGray
+
+
+

@@ -1,0 +1,37 @@
+.nav-tabs
+  margin: $basicPadding 0
+  padding: 0
+  @extend %clear
+
+  li
+    list-style: none
+    float: left
+    margin: 0 $basicPadding 0 0
+    padding: 0
+
+    a
+      display: block
+      padding: $basicPadding/2 $basicPadding*2
+      text-decoration: none
+      border: 1px solid $borderColor
+      box-sizing: border-box
+      border-radius: $basicPadding*2
+      color: $colorGray
+      background: $contrastColor
+
+      &:hover
+        background: $contrastColor - 2
+        border-color: $borderColor - 20
+
+    &.active
+      a
+        background: $linkColor
+        color: $contrastColor
+        border-color: $linkColor
+
+.tab-content
+  .tab-pane
+    display: none
+
+    &.active
+      display: block

@@ -1,0 +1,74 @@
+.section-slider
+  background: #f7f4eb
+  padding: $basic-padding*3 0
+  position: relative
+  top: -$basic-padding*2
+  & header.mod-title
+    & h1
+      text-align: center
+      text-transform: uppercase
+      color: #313131
+      margin: 0 0 $basic-padding*2
+  & .modcontent
+    padding: 0
+
+.jcarousel-clip-horizontal
+  width: $max-width
+  overflow: hidden
+
+  & li.jcarousel-item-horizontal
+    width: 170px
+    overflow: hidden
+    float: left
+    padding: 0
+    margin: 0 30px 0 0
+    text-align: center
+
+
+    &.hover
+      & img
+        opacity: 0.7
+
+    & a.title
+      text-decoration: none
+      font-family: Georgia, "Times New Roman", Times, serif
+      font-style: italic
+      color: #313131
+      font-size: 16px
+      display: block
+      padding: $basic-padding 0 0
+      height: 3.3em
+      line-height: 1.1em
+      display: block
+      overflow: hidden
+
+    & .image
+      width: 170px
+      height: 170px
+      border-radius: 170px
+      line-height: .5
+      overflow: hidden
+      & img
+        transition: all 0.5s ease-out 0s
+
+.jcarousel-container-horizontal
+  & .jcarousel-prev, & .jcarousel-next
+    position: absolute
+    top: 50px
+    height: 80px
+    line-height: 80px
+    width: 20px
+    cursor: pointer
+    &:before
+      +font-icon
+      font-size: 60px
+      color: #999
+  & .jcarousel-prev
+    left: -40px
+    &:before
+      content: "\f104"
+
+  & .jcarousel-next
+    right: -40px
+    &:before
+      content: "\f105"

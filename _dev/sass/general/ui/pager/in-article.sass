@@ -1,0 +1,29 @@
+ul.pagenav
+  box-sizing: border-box
+  margin: $basicPadding 0 0
+  padding: $basicPadding 0
+  border-top: 1px solid $borderColor
+  @extend %clear
+
+  li
+    list-style: none
+    padding: 0
+    font-size: .9em
+
+    &.previous
+      float: left
+
+    &.next
+      float: right
+
+    a
+      display: block
+      padding: $basicPadding/2 $basicPadding
+      text-decoration: none
+      line-height: 1
+      border: 1px solid $linkColor
+      border-radius: 30px
+
+      &:hover
+        border-color: $linkColor + 50
+        color: $linkColor + 50

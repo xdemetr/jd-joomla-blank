@@ -1,0 +1,33 @@
+.mod-content
+  .search
+    @extend %clear
+
+    label
+      display: none
+
+    .inputbox
+      display: block
+      width: 100%
+      height: $basicPadding*4
+      //background: image-url('icons/search-gray.png') no-repeat 4px 50% / 16px auto $contrastColor
+      padding-left: $basicPadding*3
+
+    .button
+      display: none
+      float: right
+      width: $basicPadding*4
+      margin: 0
+      text-indent: -9999px
+      background: none
+      //background: image-url('icons/search-white.png')
+      background-size: 16px 16px
+
+.sidebar-first,
+.sidebar-second
+  .search
+    position: relative
+    
+    .inputbox
+      float: left
+      //width: $leftColWidth - $basicPadding*9
+      width: 100%

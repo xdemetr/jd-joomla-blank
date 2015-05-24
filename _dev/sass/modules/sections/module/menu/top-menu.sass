@@ -1,0 +1,135 @@
+/*** *** *** *** ***/
+/*** MENU ***/
+/*** *** *** *** ***/
+
+$top-menu-height : 40px
+$sub-menu-width : 230px
+
+// li при наведении первого уровня
+$tmenu-li-hover: #999
+
+// Цвет при наведении подменю
+$tmenu-hover-sub: #f8f8f8
+
+// Цвет ссылок подменю
+$tmenu-submenu-link: #333
+
+$topMenuLinkHover1: #fc9d00
+$topMenuLinkHover2: $topMenuLinkHover1 - 20
+
+$topMenuLinkHover: #fff
+
+$tmenu-bg-1: #fff
+$tmenu-bg-2: #eee
+
+.top-menu
+  display: block
+  position: relative
+  height: $top-menu-height
+  margin: 0
+  padding: 0
+  border-radius: 4px
+  box-shadow: 0 1px 2px rgba(#000, .25)
+  background: linear-gradient($tmenu-bg-1, $tmenu-bg-2)
+
+  > li
+    position: relative
+    list-style: none
+    float: left
+    padding: 0
+    box-shadow: inset -1px 0 $tmenu-bg-2, inset -2px 0 $tmenu-bg-1
+
+    > a
+      display: block
+      height: $top-menu-height
+      padding: 0 $basicPadding*2
+      text-decoration: none
+      text-shadow: 0 1px 0 #fff
+      font-weight: 700
+      line-height: $top-menu-height
+      color: #666
+
+    &.hover
+      background: $tmenu-li-hover
+
+      > a
+        text-shadow: none
+        color: $contrastColor
+
+    &.active
+      background: #ccc
+
+    .nav-child
+      display: none
+      position: absolute
+      z-index: 90
+      top: $top-menu-height
+      left: -2px
+      width: $sub-menu-width
+      margin: 0
+      padding: 0
+      border: 1px solid $borderColor
+      box-shadow: 0 1px 3px $borderColor
+      background: #fff
+
+      li
+        position: relative
+        list-style: none
+        float: none
+        padding: 0
+
+        a
+          display: block
+          height: auto
+          padding: $basicPadding
+          text-decoration: none
+          line-height: inherit
+          color: $tmenu-submenu-link
+
+        .nav-child
+          top: -1px
+          left: $sub-menu-width - 4
+
+  &.dropdown
+    > li.deeper
+      padding-right: $basicPadding*2
+
+      &::after
+        +font-icon
+        content: '\f107'
+        position: absolute
+        top: 50%
+        right: 8px
+        margin-top: -.5em
+
+      &::before
+        display: none
+
+      &.hover
+        &::after
+          color: $contrastColor
+
+
+      ul.nav-child
+
+        li.deeper
+
+          &::after
+            +font-icon
+            content: '\f105'
+            position: absolute
+            top: 50%
+            right: 4px
+            margin-top: -.5em
+            color: $tmenu-submenu-link
+
+  li.hover
+    > .nav-child
+      display: block
+
+      li.hover
+        background: $tmenu-hover-sub
+
+/*** *** *** *** ***/
+/*** END MENU ***/
+/*** *** *** *** ***/

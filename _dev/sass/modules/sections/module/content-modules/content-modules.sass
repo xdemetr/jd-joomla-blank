@@ -1,0 +1,46 @@
+ul.relateditems,
+ul.archive-module,
+ul.categories-module,
+ul.category-module,
+ul.latestnews,
+ul.latestusers,
+ul.mostread
+  @extend %no-margin
+  @extend %no-padding
+
+  li
+    padding: $basicPadding/2 0 $basicPadding/2 $basicPadding*2
+    position: relative
+    list-style: none
+
+    h4
+      font-size: 100%
+
+    &::before
+      +font-icon
+      content: '\e827'
+      color: $colorGray
+      position: absolute
+      left: 0
+      top: $basicPadding
+
+
+ul.archive-module li::before
+  content: '\e7bf'
+
+ul.categories-module li::before,
+ul.category-module li::before
+  content: '\e793'
+  top: $basicPadding - 2
+
+ul.latestnews li::before
+  content: '\e7a5'
+  top: $basicPadding - 1
+
+ul.mostread li::before
+  content: '\e832'
+  top: $basicPadding - 1
+
+ul.latestusers li::before
+  content: '\e7d4'
+  top: $basicPadding - 1

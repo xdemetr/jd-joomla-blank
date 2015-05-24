@@ -1,0 +1,42 @@
+header.header
+  .search-box
+    margin-left: $leftColWidth
+    float: left
+    width: 48%
+
+    label
+      display: none
+
+    .inputbox
+      width: 100%
+      border: 1px solid #285166
+      border-radius: 20px
+      background: #0c1b23
+      color: #285166
+      padding: 6px 16px 6px 32px
+      background: image-url('icons/search-pink.png') 8px 50% no-repeat #0c1b23
+
+      &:focus
+        color: #ccc
+        background-color: #0c1b23 + 40
+        //box-shadow: 0 1px 3px #285166 + 100
+        border-color: #285166 + 40
+
+    +respond-to(tablet)
+      width: 38%
+
+.element-invisible
+  display: none
+
+.footer-module .search
+
+  .inputbox
+    width: 100%
+    border: 1px solid #285166
+    border-radius: 20px
+    background: #0c1b23
+    color: #285166
+    padding: 6px 16px 6px 32px
+    background: image-url('icons/search-pink.png') 8px 50% no-repeat #0c1b23
+
+

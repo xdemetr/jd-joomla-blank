@@ -1,0 +1,56 @@
+nav.top-menu
+  & ul.menu
+    padding: 0 1%
+    width: 100%
+    margin: 0
+    & li
+      width: 14%
+      & a
+        width: 100%
+
+      &.hover
+        & a
+          color: #fff
+
+
+
+        & ul
+          border: 2px solid #FA8000
+          box-sizing: border-box
+          box-shadow: none
+          border-radius: 0 2px 2px 2px
+          margin: 0
+          & li
+            width: auto
+            background: none
+
+            & a
+              color: #767272
+              width: auto
+              padding: $basic-padding $basic-padding $basic-padding $basic-padding*2
+              border-bottom: 1px dashed #e5e5e5
+              &:before
+                +font-icon
+                position: absolute
+                left: 12px
+                top: 16px
+                content: "\f105"
+                color: #fa8000
+                padding: 0 $basic-padding 0 0
+              &:hover
+                text-decoration: underline
+
+            &.last
+              border: none
+              padding-bottom: $basic-padding/2
+
+              a
+                border: none
+
+          &.hover
+            & ul
+              & li
+                & a
+                  padding: 0
+
+

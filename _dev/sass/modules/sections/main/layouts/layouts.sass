@@ -1,0 +1,34 @@
+.cont-inner
+  @extend %inner
+  @extend %clear
+
+.center-div
+  float: left
+  padding: 0
+  position: relative
+  width: 100%
+
+.content-three-col
+  padding: 0 0 $gutterVertical
+  margin: 0 $rightColWidth + $gutterHorizontal 0 $leftColWidth + $gutterHorizontal
+
+.full .content-three-col
+  @extend %no-margin
+
+.sidebar-first-div .content-three-col
+  margin: 0 0 0 $leftColWidth + $gutterHorizontal
+
+.sidebar-second-div .content-three-col
+  margin: 0 $rightColWidth + $gutterHorizontal 0 0
+
+aside.sidebar-first
+  float: left
+  margin-left : -100%
+  position : relative
+  width: $leftColWidth
+
+aside.sidebar-second
+  float: left
+  margin-left : -($rightColWidth)
+  position: relative
+  width: $rightColWidth

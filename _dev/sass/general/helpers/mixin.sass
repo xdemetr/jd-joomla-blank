@@ -1,0 +1,26 @@
+=placeholder()
+  &::-moz-placeholder
+    @content
+
+  &::-webkit-input-placeholder
+    @content
+
+  &:-ms-input-placeholder
+    @content
+
+=respond-to($media)
+  @if $media == big-tablet
+    @media only screen and (max-width: $maxWidth)
+      @content
+
+  @else if $media == tablet
+    @media only screen and (max-width: 1024px)
+      @content
+
+  @else if $media == small-tablet
+    @media only screen and (max-width: 800px)
+      @content
+
+  @else if $media == mobile
+    @media only screen and (max-width: 480px)
+      @content

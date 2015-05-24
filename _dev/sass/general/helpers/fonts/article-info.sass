@@ -1,0 +1,31 @@
+dl.article-info
+  dd
+    &:before
+      +font-icon
+
+  dd.category-name,
+  dd.parent-category-name
+    &:before
+      content: "\e792"
+
+  dd.createdby
+    &:before
+      content: "\e7d4"
+
+  dd.hits
+    &:before
+      content: "\e82a"
+
+  dd.created,
+  dd.create
+
+    &:before
+      content: "\e7ac"
+
+.created
+  font-size: 12px
+  &::before
+    +font-icon
+    padding: 0 4px 0 0
+    content: '\e7ac'
+    color: $colorGray

@@ -1,0 +1,25 @@
+.items-leading,
+.items-row
+  margin : 0 0 $leftColMargin
+  @extend %clear
+
+.items-leading
+  > div
+    margin-bottom: $basicPadding*3
+
+.items-row
+  &.cols-3
+    .item
+      float: left
+      width: 30%
+
+      &.column-2
+        margin: 0 5%
+
+  &.cols-2
+    .item
+      float: left
+      width: 48%
+
+      &.column-2
+        float: right
