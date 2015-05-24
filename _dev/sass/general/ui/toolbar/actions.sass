@@ -1,0 +1,54 @@
+$actionButtonSize: 16px
+
+ul.actions, ul.dropdown-menu
+  float: right
+  width: auto
+  margin: 0
+  padding: 0
+
+  li
+    list-style: none
+    float: left
+    margin : 0 0 0 $basicPadding
+    padding: 0
+
+    a
+      color: $colorGray
+      width: auto
+      padding-left: $basicPadding*3!important
+      text-decoration: none
+      position: relative
+      &:hover
+        color: $linkColor
+
+    a::after
+      +font-icon
+      display: block
+      width: 16px
+      height: 16px
+      overflow: hidden
+      text-align: center
+      line-height: 16px
+      text-decoration: none
+      position: absolute
+      left: 4px
+      top: .4em
+      font-size: inherit
+
+
+
+    a img, a span
+      display: none
+
+
+  .print-icon
+    a::after
+      content: "\e750"
+
+  .email-icon
+    a::after
+      content: "\e752"
+
+  .edit-icon
+    a::after
+      content: '\e743'

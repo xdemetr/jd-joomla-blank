@@ -1,0 +1,50 @@
+.items-more
+  position: relative
+  margin: $basicPadding 0 $basicPadding*2
+  padding: $basicPadding*2
+  border: 1px solid $borderColor
+  border-radius: 2px
+
+  h3
+    display: inline-block
+    position: relative
+    top: -2em
+    @extend %no-margin
+    padding: 0 .2em
+    font-size: 1em
+    font-weight: 700
+    background: #fff
+
+    &:before
+      content: "\e786"
+      display: block
+      +font-icon
+      position: relative
+      top: 2px
+      float: left
+      margin: 0 8px 0 0
+      color: $borderColor
+
+
+
+  ol
+    position: relative
+    padding: 0 0 0 2em
+    @extend %no-margin
+
+    li
+      list-style: decimal
+      padding: $basicPadding/2 0
+      margin: 0
+      color: $linkColor
+      float: none
+
+      a
+        display: inline
+        border: none
+        padding: 0
+        color: inherit
+        text-decoration: underline
+
+        &:hover
+          text-decoration: none

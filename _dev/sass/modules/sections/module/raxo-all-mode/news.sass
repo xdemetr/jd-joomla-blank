@@ -1,0 +1,26 @@
+.allmode-box.news
+  @extend %clear
+
+  .item
+    padding: $basicPadding
+    border-bottom: 1px solid $borderColor
+
+    .image
+      float: left
+      margin: 0 $basicPadding $basicPadding/2 0
+
+      a
+        line-height: .5
+
+    header
+      .created
+        color: $colorGray
+
+      h1
+        font-size: $titleSize - $basicPadding
+
+    &.last
+      border-bottom: none
+
+
+

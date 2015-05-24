@@ -1,0 +1,135 @@
+=attach($level, $color)
+  .sections-menu
+    li
+
+$attSize: 32px
+
+.attachment-link
+  display: inline-block
+  position: relative
+  margin-left: $attSize + 4
+  text-decoration: none
+  vertical-align: middle
+  line-height: $attSize
+
+  &::before
+    +font-icon
+    position: absolute
+    top: 0
+    left: -($attSize + 4)
+    box-sizing: border-box
+    width: $attSize
+    height: $attSize
+    margin-right: 4px
+    text-align: center
+    font-size: 16px
+    line-height: $attSize
+    border-radius: 2px
+    color: #fff
+
+
+
+.icon-pdf
+  &::before
+    content: '\e916'
+    background: #c00
+
+.icon-excel,
+.icon-excelx
+  &::before
+    content: '\e919'
+    background: green
+
+.icon-word,
+.icon-wordx
+  &::before
+    content: '\e918'
+    background: #369
+
+.icon-ppt,
+.icon-pptx
+  &::before
+    content: '\e91b'
+    background: orange
+
+.icon-zip,
+.icon-archive
+  &::before
+    content: '\e91a'
+    background: #999
+
+.icon-image
+  &::before
+    content: '\e917'
+    background: #999
+
+
+.at_filename
+  .filesize
+    font-weight: 400
+    color: #ccc
+
+.attachmentsContainer
+  table
+    border: 0!important
+
+    td
+      font-size: inherit
+      border: 0
+
+.attachment-xls,
+.attachment-ptt,
+.attachment-pdf,
+.attachment-jpg,
+.attachment-zip,
+.attachment-doc
+  display: inline-block
+  position: relative
+  margin-left: 28px
+  padding: 0 16px
+  text-decoration: none
+  font: 13px/24px $mainFont
+  border-radius: 2px
+  color: #fff
+
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: -28px
+    width: 22px
+    height: 24px
+    line-height: .5
+    border-radius: 2px
+    //background: image-url('icon-attachment.png') no-repeat 0 0
+
+.attachment-xls
+  background: #81c48f
+  &::before
+    background-position: 0 0
+
+.attachment-ptt
+  background: #f0a839
+  &::before
+    background-position: 0 -24px
+
+.attachment-pdf
+  background: #f7886e
+  &::before
+    background-position: 0 -48px
+
+.attachment-jpg
+  background: #91a0b0
+  &::before
+    background-position: 0 -72px
+
+.attachment-zip
+  background: #f1c238
+  &::before
+    background-position: 0 -96px
+
+.attachment-doc
+  background: #6fa6f7
+  &::before
+    background-position: 0 -120px

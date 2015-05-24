@@ -1,0 +1,39 @@
+.sidebar-first,
+.sidebar-second
+
+  .reg-form-block-sidebar
+
+    .inputbox
+      width: 100%
+
+    .line-icon
+      box-sizing: border-box
+      position: relative
+
+      &::before
+        display: block
+        position: absolute
+        top: 50%
+        left: 0
+        width: $basicPadding*4
+        +font-icon
+        margin-top: -.5em
+        text-align: center
+        font-size: inherit
+
+      .inputbox
+        padding-left: $basicPadding*3.5
+
+      &.icon-user::before
+        content: '\e73b'
+
+      &.icon-password::before
+        content: '\e741'
+
+    #form-login-remember
+      input
+        float: left
+        margin: 0 4px 0 0
+
+.reg-form-block p
+  @extend %clear

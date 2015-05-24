@@ -1,0 +1,43 @@
+.contact .panel
+  margin: 0 0 $basicPadding
+
+  h3
+    font-size: 1.2em
+    @extend %no-margin
+    @extend %no-padding
+
+.pane-sliders .panel
+  padding: $basicPadding
+  border: 1px solid $borderColor
+  border-radius: 4px
+  background: #fff
+
+.contact .panel h3
+  &.title a
+    text-decoration: none
+    border-bottom: 1px dashed $linkColor
+    &:hover
+      border: none
+  &.pane-toggler-down
+    margin: 0 0 $basicPadding
+
+.contact-form
+  padding: $basicPadding 0
+
+  textarea, & input
+    width: 400px
+    resize: none
+
+  input[type="checkbox"]
+    width: auto
+    margin: 0 $basicPadding/2 0 0
+    @extend %float-left
+
+.contact-line
+  padding: $basicPadding/2 0
+
+  .label
+    float: left
+    width: 200px
+    margin: 0 $basicPadding 0 0
+    padding: $basicPadding/2 0 0 0

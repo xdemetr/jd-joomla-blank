@@ -1,0 +1,26 @@
+ul.marked
+  margin: 8px 0 8px 16px
+
+  li
+    list-style: disc
+    margin: 4px 0
+
+  &.check
+    li
+      position: relative
+      list-style: none
+      padding-left: 8px
+
+      &::before
+        content: '\e046'
+        position: absolute
+        +font-icon
+        top: 4px
+        left: -1em
+        color: $linkColor
+
+ol.number
+  margin: 8px 0 8px 16px
+
+  li
+    list-style: number

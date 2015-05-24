@@ -1,0 +1,35 @@
+.swiper-container
+  overflow: hidden
+
+.swiper-wrapper
+  @extend %clear
+
+  .swiper-slide
+    //width: 20%
+    float: left
+    padding: $basicPadding $basicPadding*2
+    box-sizing: border-box
+    cursor: pointer
+
+    .title
+      font-size: $titleSize - $basicPadding
+
+
+
+$swPagination: 12px
+.swiper-pagination-switch
+  display: inline-block
+  width: $swPagination
+  height: $swPagination
+  border: 1px solid $borderColor - 10
+  border-radius: $swPagination
+  box-sizing: border-box
+  background: $borderColor + 10
+  cursor: pointer
+  margin: 0 2px
+
+
+
+  &.swiper-active-switch
+    background: $linkColor
+    border-color: $linkColor

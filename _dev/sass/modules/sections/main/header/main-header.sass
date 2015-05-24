@@ -1,0 +1,24 @@
+.main-header
+  padding: $basicPadding*2 0
+  background: $colorGray
+  margin-bottom: $gutterHorizontal
+
+  a
+    color: $contrastColor
+
+  .logo
+    line-height: .5
+    display: block
+    float: left
+
+  .header-block
+    float: right
+    width: $rightColWidth
+    position: relative
+
+.main-header-inner
+  @extend %inner
+  @extend %clear
+
+.navigation.main-width
+  margin-bottom: $basicPadding*3

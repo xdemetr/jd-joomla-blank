@@ -1,0 +1,30 @@
+.com_rsform
+  h2,
+  fieldset.formFieldset legend
+    font-size: 28px
+    color: $colorGray
+    font-weight: 700
+    text-transform: uppercase
+
+  .formContainer
+    background: #f5f4ed
+    padding: $basicPadding*2!important
+    background: image-url('form-hor-bg.png') top left repeat-x, image-url('form-hor-bg.png') bottom left repeat-x, image-url('form-ver-bg.png') top left repeat-y, image-url('form-ver-bg.png') top right repeat-y
+    background-color: #f5f4ed
+
+    .formControlLabel,
+    .formCaption
+      font-style: italic
+
+    .formRequired
+      color: #C00
+      font-weight: 400
+
+    li
+      +clear-block
+
+    .formBody
+      width: 72%
+
+    .rsform-input-box
+      background: #fff

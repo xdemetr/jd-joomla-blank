@@ -1,0 +1,81 @@
+$footerColor: #668ea2
+
+footer.footer
+  position: relative
+  padding: $basicPadding*3 0 0
+  font-size: 12px
+  background: none
+  color: #fff
+
+  .footer-inner
+    padding: $basicPadding*2 0
+    background: #162e3a
+
+
+    &.top
+      position: relative
+      background: #214658
+      
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        width: 100%
+        height: 4px
+        top: 0
+        background: image-url('header-line.png') repeat-x
+
+      a
+        color: #3896bc
+
+    &.bottom
+      a
+        color: #36667e
+
+  .footer-module
+    width: auto
+    color: $footerColor
+
+    &.first
+      width: $leftColWidth
+      float: left
+
+      p
+        margin: 0
+
+    &.second
+      padding: 0 0 0 $leftColWidth + $leftColMargin
+
+
+    &.last
+      float: right
+      width: $rightColWidth
+      padding: $basicPadding 0 0
+
+
+    &.third
+      margin-right: $rightColWidth + $rightColMargin
+
+    .module-block
+      margin: 0
+
+      .mod-content
+        padding: 0
+
+
+  ul.menu li
+    padding: $basicPadding*2 $basicPadding*2 0 0
+    float: left
+    font-size: 16px
+
+    &.parent::before
+      display: none
+
+    &.active
+      background: none
+
+      a
+        color: #3896bc + 60
+
+
+

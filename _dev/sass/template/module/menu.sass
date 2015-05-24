@@ -1,0 +1,22 @@
+.module-block.menu
+  ul.menu
+
+    > li
+      padding: 0
+      position: relative
+
+      > a
+        padding: $basicPadding*1.5 $basicPadding
+        text-decoration: none
+        font-size: 16px
+        color: $linkColor-dark
+        text-align: center
+
+      &::after
+        content: ''
+        display: block
+        width: 100%
+        height: 1px
+        background-color: #33a7ce
+        @include filter-gradient(#33a7ce, #f261a6, horizontal)
+        @include background-image(linear-gradient(left, #33a7ce 0%,#95d656 30%,#ff9b5f 68%,#f261a6 100%))

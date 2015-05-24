@@ -1,0 +1,117 @@
+body
+  line-height: inherit
+
+.content-threecol
+  overflow: inherit
+
+.cont-inner
+  position: relative
+  background: image-url('cont-bg.png') $leftColWidth 0 repeat-y #f4fcff
+  display: table
+  height: 100%
+  width: 100%
+  +respond-to(tablet)
+    background-position: $leftColWidth - $basicPadding*3 0
+
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    width: $leftColWidth
+    height: 100%
+    background: #fff
+    z-index: 10
+    top: 0
+    left: 0
+
+    +respond-to(tablet)
+      width: $leftColWidth - $basicPadding*3
+
+  &::before
+    content: ''
+    display: block
+    width: 100%
+    height: 541px
+    position: absolute
+    background: image-url('cont-bg-default.png') $leftColWidth 0 no-repeat
+
+    +respond-to(tablet)
+      background-position: $leftColWidth - $basicPadding*3 0
+
+
+
+.sidebar-first
+  z-index: 20
+  padding-top: $basicPadding*3
+
+  &::after
+    content: ''
+    display: block
+    width: 50%
+    height: 100%
+    left: 0
+    top: 0
+    background: #eee
+
+  .logo
+    text-align: center
+    margin: 0 0 $basicPadding*2
+
+    a
+      display: block
+      line-height: .5
+
+    .link-contact
+      display: inline-block
+      height: $basicPadding*4
+      line-height: $basicPadding*4
+      margin: $basicPadding 0 0
+      background: #3896bc
+      border-radius: $basicPadding*4
+      color: #fff
+      text-decoration: none
+      padding: 0 $basicPadding*4 0 $basicPadding*5
+      position: relative
+
+      &::before
+        position: absolute
+        top: 8px
+        +font-icon
+        content: '\e74d'
+        font-size: inherit
+        padding: 0 4px 0 0
+        left: 1.4em
+
+.bg-right
+  background: #f4fcff
+  position: absolute
+  right: 0
+  top: 0
+  height: 100%
+  width: 200px
+
+.content-div
+  overflow: hidden
+  display: table
+  width: 100%
+  height: 100%
+
+.sidebar-second
+  padding-top: $basicPadding*3
+
+body.spring
+  background: image-url('body-spring-bg.png') top left repeat-x
+
+  .bg-right
+    background: image-url('body-spring-bg.png') top left repeat-x #f4fcff
+    
+  .cont-inner::before
+    background: image-url('cont-bg-spring.png') $leftColWidth 0 no-repeat
+    +respond-to(tablet)
+      background-position: $leftColWidth - $basicPadding*3 0
+
+.article-share
+  padding: $basicPadding 0 $basicPadding $basicPadding*3
+  border-top: 1px solid $borderColor
+  border-bottom: 1px solid $borderColor
+  margin-left: -$basicPadding*3

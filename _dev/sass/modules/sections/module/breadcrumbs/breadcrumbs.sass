@@ -1,0 +1,21 @@
+.breadcrumbs
+  padding: $basicPadding 0
+  margin: 0 0 $basicPadding
+  @extend .small-font
+  color: $colorGray
+  //font-family: tahoma
+  border-bottom: 1px solid $borderColor
+  border-top: 1px solid $borderColor
+
+  a
+    color: $linkColor
+
+  span.separator
+    padding: 0 4px
+
+    img
+      display: none
+
+    &::after
+      +font-icon
+      content: "\f105"

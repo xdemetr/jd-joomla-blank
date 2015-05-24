@@ -1,0 +1,77 @@
+.header-block .user-box
+  $userBoxHeaderLink: $basicPadding*3
+
+  padding: 4px 0 0
+  position: relative
+  float: right
+  width: $rightColWidth
+  color: $borderColor - 80
+
+  a, .pseudo-link
+    display: inline-block
+    height: $userBoxHeaderLink
+    box-sizing: border-box
+    line-height: $userBoxHeaderLink
+    color: $borderColor
+
+  .login-button
+    padding: 0 $basicPadding
+    text-decoration: none
+    border: 1px solid $borderColor
+    border-radius: 4px
+    background: #fff
+    color: $linkColor
+
+  .pseudo-link
+    font-weight: 700
+
+    &.active
+      text-decoration: none
+      border-bottom: none
+      border-radius: 4px 4px 0 0
+      background: #fff
+      color: $linkColor-dark
+
+  .login-greeting
+    float: left
+    margin: 0 $basicPadding 0 0
+    padding: 3px 0 0
+
+  .btn
+    padding: 0 $basicPadding
+    font-weight: 400
+
+
+  .reg-form-block
+    display: none
+    position: absolute
+    box-sizing: border-box
+    z-index: 40
+    top: $userBoxHeaderLink
+    width: $rightColWidth
+    padding: $basicPadding*2
+    border: 1px solid $borderColor
+    border-top: none
+    border-radius: 0 4px 4px 4px
+    background: #fff
+
+    a
+      border: none
+      color: $linkColor-dark
+
+    p
+      margin: 0 0 $basicPadding/2
+      @extend %clear
+
+      .inputbox
+        width: 100%
+
+    ul
+      margin: 0
+      padding: $basicPadding 0 0 $basicPadding*2
+
+      li
+        padding: 0
+
+        a
+          padding: 0

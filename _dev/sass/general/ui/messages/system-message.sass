@@ -1,0 +1,30 @@
+#system-message
+  $clsBtnMess: 24px
+
+  .alert
+    position: relative
+    padding: 16px
+
+
+    .close
+      position: absolute
+      top: 8px
+      right: 8px
+      width: $clsBtnMess
+      height: $clsBtnMess
+      text-align: center
+      text-decoration: none
+      line-height: $clsBtnMess
+      border-radius: $clsBtnMess
+      background: $linkColor
+      color: $contrastColor
+
+    &.alert-warning
+      border-bottom: 1px solid $notifyWarningBg - 32
+      background: $notifyWarningBg
+
+    .alert-heading
+      font-size: $titleSize
+
+    p
+      margin: 8px 0

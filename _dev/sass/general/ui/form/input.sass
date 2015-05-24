@@ -1,0 +1,20 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea,
+.inputbox
+  font-family: Arial, helvetica, sans-serif
+  font-size: $bodyFontSize
+  border: 1px solid $borderColor - 16
+  padding: 8px
+  outline: none
+  border-radius: 2px
+  background-color: $contrastColor
+  box-sizing: border-box
+
+  &:hover
+    border-color: $borderColor - 24
+  &:focus
+    border-color: $borderColor - 32
+    box-shadow: 0 1px 3px $borderColor - 20

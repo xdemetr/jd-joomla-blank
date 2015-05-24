@@ -1,0 +1,27 @@
+p.readmore
+  position: relative
+  margin: $basicPadding 0 0
+
+  &:before
+    +font-icon
+    content: "\e76a"
+    color: $linkColor
+    margin: 0 4px 0 0
+
+  a
+    color: $linkColor
+
+    &.btn
+      text-decoration: underline
+      background: none
+      box-shadow: none
+      color: $linkColor
+      font-weight: 400
+      border: none
+      padding: inherit
+      text-shadow: none
+      border-radius: 0
+      display: inline
+
+      span
+        display: none

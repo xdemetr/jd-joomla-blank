@@ -1,0 +1,14 @@
+$gutterHorizontal: 24px
+$gutterVertical: 24px
+
+$colWidth: 224px
+
+$maxWidth: $colWidth*5 + $gutterHorizontal*4
+
+@function colWidth($colLevel)
+  @return $colWidth*$colLevel + $gutterHorizontal*($colLevel - 1)
+
+$colHeight: 180px
+
+@function colHeight($colLevel)
+  @return $colHeight*$colLevel + $gutterVertical*($colLevel - 1)

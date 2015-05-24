@@ -1,0 +1,40 @@
+.module-block.cal
+  header.mod-title
+    h1
+      padding: 0 0 $basicPadding
+      @extend %no-margin
+
+  .modcontent
+    padding: 0
+
+    .calendar
+      box-shadow: 0 2px 5px #ccc
+
+      table.blogCalendar
+        width: 100%
+
+        td.blogCalendarHeader
+          padding: $basicPadding
+          vertical-align: middle
+          border: none
+          border-bottom: 1px solid #d0d4d9
+          background: #fa8500
+
+          a
+            font-size: 12px
+            font-weight: 400
+            color: #fff
+
+        td
+          padding: $basicPadding/2
+          vertical-align: middle
+          line-height: 1em
+          border: 1px solid #d0d4d9
+
+          &.blogCalendarToday
+            border: 1px solid #e0a38a
+            background: #eef1f5
+            color: #ef733c
+
+            & a
+              color: #ef733c

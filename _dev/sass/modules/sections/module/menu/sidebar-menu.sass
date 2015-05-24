@@ -1,0 +1,63 @@
+$menuArrowSize: 16px
+
+aside .menu
+
+  > li
+    list-style: none
+    padding: $basicPadding
+
+    > a
+      display: block
+
+
+    &.parent
+      position: relative
+
+      > a
+        padding-right: 12px
+
+      &:before
+        +font-icon
+        content: "\f107"
+        display: block
+        position: absolute
+        top: $menuArrowSize + 2
+        right: $menuArrowSize/4
+        width: $menuArrowSize
+        height: $menuArrowSize
+        margin: -$menuArrowSize/2 0 0
+        text-align: center
+        font-size: 10px
+        line-height: $menuArrowSize
+        border-radius: $menuArrowSize
+        background: $borderColor + 10
+        color: $colorGray
+
+    &.active
+      > a
+        text-decoration: none
+        color: #000
+      &:before
+        box-shadow: inset 0 1px 2px $borderColor - 20
+        color: $linkColor
+
+  .nav-child
+    //@extend .no-margin
+    margin: $basicPadding 0 0 $basicPadding
+    @extend %no-padding
+
+    li
+      list-style: none
+
+      a
+        display: block
+        padding: $basicPadding/2 $basicPadding
+
+    .active
+      > a
+        text-decoration: none
+        border-radius: 2px
+        background: $borderColor
+
+      .inner-menu
+        font-size: $bodyFontSize*.9

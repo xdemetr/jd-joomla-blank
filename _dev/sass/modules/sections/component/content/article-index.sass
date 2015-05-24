@@ -1,0 +1,26 @@
+.pagenavcounter
+  display: inline-block
+  padding: 0 $basicPadding $basicPadding/2 0
+  font-weight: 700
+
+
+#article-index
+  float: right
+  max-width: 180px
+  font-size: .9em
+  background: $message-bg + 10
+  line-height: 1.3em
+
+  @extend %clear
+
+  ul
+    padding: $basicPadding $basicPadding*2
+    @extend %no-margin
+
+    li
+      padding: $basicPadding/2 0
+      list-style: none
+      border-bottom: 1px solid $message-bg - 20
+
+      a.active
+        font-weight: 700

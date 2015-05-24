@@ -1,0 +1,72 @@
+.btn-group
+  position: relative
+  float: left
+  display: inline-block
+
+  .btn.dropdown-toggle
+    margin: 0
+    width: $basicPadding*3
+    height: $basicPadding*3
+    padding: 0
+    border: none
+    box-shadow: none
+
+
+    .icon-cog
+      position: relative
+      width: $basicPadding*3
+      height: $basicPadding*3
+      display: block
+
+      &::after
+        +font-icon
+        content: '\e73e'
+        width: $basicPadding*3
+        height: $basicPadding*3
+        display: block
+        line-height: $basicPadding*3
+        text-align: center
+
+
+  ul.dropdown-menu
+    margin: 0
+    padding: 0
+    display: none
+    position: absolute
+    //width: 200px
+    background: #fff
+    right: 0
+    float: none
+    background: #fff
+    box-shadow: 0 1px 3px $borderColor - 10
+    border-radius: 2px
+
+    li
+      float: none
+      margin: 0
+      border-bottom: 1px solid $borderColor + 4
+      list-style: none
+
+      a
+        width: auto!important
+        height: auto!important
+        text-align: left
+        display: block
+        padding: $basicPadding/2 $basicPadding
+
+
+
+        span
+          display: none
+
+        &:hover
+          background: $contrastColor - 4
+
+  &.open
+    ul.dropdown-menu
+      display: block
+
+
+.pull-right
+  float: right
+  padding: 0 0 0 $basicPadding
